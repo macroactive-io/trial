@@ -1,0 +1,18 @@
+## Home trial for back-end applicants
+
+Your application should be considered as a part of a big project, so don't use simple scripts and consider using a proper framework (of your choice though).
+No need to try to introduce any optimizations in advance, the idea of the task is to make an example of your very best code with the very best design/architecture.
+Tests are required. Front-end will not be considered.   
+
+### Description of the app
+
+No authentication is required — all actions can be done by guests. You need to add ability to add a message, show all messages, show leaderboard of most active authors.  
+
+### Requirements:
+
+* app can be ran using PHP7.4
+* every posted message has: `content` which can contain any text and `author` field of email format
+* next pages are required:
+    * `/` is the index page showing all posted messages
+    * `/add` is the page to add a message having two fields: `content` and `author`
+    * `/leaderboard` is a list of top-10 most active authors
