@@ -16,3 +16,5 @@ No authentication is required — all actions can be done by guests. You need to
     * `/` is the index page showing all posted messages
     * `/add` is the page to add a message having two fields: `content` and `author`
     * `/leaderboard` is a list of top-10 most active authors
+
+You can implement pages either as server-generated html or as API endpoints
