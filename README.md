@@ -11,10 +11,10 @@ No authentication is required — all actions can be done by guests. You need to
 ### Requirements:
 
 * app can be ran using PHP7.4
-* every posted message has: `content` which can contain any text and `author` field of email format
+* every posted message has: `content` which can contain any text, `author` field of email format and status `published/draft`
 * next pages are required:
-    * `/` is the index page showing all posted messages
-    * `/add` is the page to add a message having two fields: `content` and `author`
-    * `/leaderboard` is a list of top-10 most active authors
+    * `/` is the index page showing all published messages
+    * `/add` is the page to add a message having three fields: `content`, `author`, and `status` flag/checkbox 
+    * `/leaderboard` is a list of top-10 authors (published messages counted only) and top-10 writers (status is not accounted)
 
-You can implement pages either as server-generated html or as API endpoints
+You can implement pages either as server-generated html or as API endpoints. Using DDD/CQRS is appreciated.
